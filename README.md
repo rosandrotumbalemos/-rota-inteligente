@@ -86,7 +86,7 @@ rota-inteligente/
 Requisitos: Python 3.11 ou superior. `make` é opcional.
 
 ```bash
-git clone <url-do-repositorio> rota-inteligente
+git clone https://github.com/rosandrotumbalemos/-rota-inteligente.git rota-inteligente
 cd rota-inteligente
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
