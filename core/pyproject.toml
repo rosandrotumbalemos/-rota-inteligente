@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rota-core"
+version = "0.1.0"
+description = "Núcleo de IA do projeto Rota Inteligente (Sabor Express): grafo, K-Means, A* e métricas."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.1",
+    "networkx>=3.2",
+    "scikit-learn>=1.4",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+rota-core = "rota_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rota_core*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# Modelo de texto Markdown do relatório: linhas longas são parágrafos, não código.
+"rota_core/reporting/report.py" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["rota_core/tests"]
+addopts = "-q"

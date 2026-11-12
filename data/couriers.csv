@@ -1,0 +1,5 @@
+id,name,vehicle,cost_per_km
+E01,Entregador 01,moto,0.42
+E02,Entregador 02,moto,0.41
+E03,Entregador 03,moto,0.46
+E04,Entregador 04,bike,0.1

@@ -1,0 +1,4 @@
+strategy,label,total_km,total_min,total_cost,avg_eta_min,max_route_min,balance_std,compute_ms,orders_count,routes_count,avg_orders_per_route,gain_vs_manual_km,gain_vs_manual_min,gain_vs_manual_cost,rank_distancia,rank_tempo,rank_custo,rank_balanceamento
+manual,Manual,176.7060,371.3200,59.6040,45.4325,105.5235,0.0000,3.3596,20,4,5.0000,,,,3,3,3,1
+nearest_neighbor,Vizinho mais próximo,73.0180,153.4120,23.8587,15.6733,47.7425,0.0000,6.7232,20,4,5.0000,58.6783,58.6847,59.9713,1,1,2,2
+kmeans_astar,K-Means + A*,73.2180,159.9745,19.7314,15.6182,78.8430,2.0000,17.3014,20,4,5.0000,58.5651,56.9173,66.8958,2,2,1,3
